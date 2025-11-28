@@ -111,6 +111,8 @@ DB_PASSWORD=
 php artisan key:generate
 ```
 
+
+AAS
 ### 5. Jalankan Database Migration
 ```bash
 php artisan migrate
