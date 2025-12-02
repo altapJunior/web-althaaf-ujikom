@@ -19,6 +19,33 @@
         .hover-scale:hover {
             transform: scale(1.05);
         }
+
+        body {
+            background-image: url('{{ asset('Lambang_Polda_Jabar.png') }}');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-color: #fef3c7;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(220, 38, 38, 0.05) 0%, rgba(239, 68, 68, 0.05) 50%, rgba(234, 179, 8, 0.05) 100%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .main-content {
+            position: relative;
+            z-index: 1;
+        }
     </style>
 </head>
 <body class="bg-gradient-to-br from-red-50 via-yellow-50 to-red-100 min-h-screen">
@@ -111,7 +138,7 @@
     </header>
 
     <!-- Content -->
-    <main class="container mx-auto px-6 py-10">
+    <main class="main-content container mx-auto px-6 py-10">
         @yield('content')
     </main>
 

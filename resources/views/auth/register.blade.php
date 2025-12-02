@@ -5,13 +5,17 @@
 @section('content')
 <div class="min-h-screen flex items-center justify-center px-4">
     <div class="w-full max-w-md">
+        <!-- Selamat Datang Header -->
+        <div class="text-center mb-8 bg-gradient-to-r from-blue-600 to-blue-500 rounded-2xl shadow-xl p-8 text-white">
+            <h2 class="text-2xl font-bold mb-2">Selamat Datang</h2>
+            <p class="text-blue-100">Daftar di Sistem Absensi PKL</p>
+        </div>
+
         <!-- Logo / Header -->
         <div class="text-center mb-8">
-            <div class="w-20 h-20 bg-gradient-to-br from-red-500 to-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                <span class="text-white font-bold text-3xl">P</span>
-            </div>
-            <h1 class="text-3xl font-bold text-gray-800">Daftar</h1>
-            <p class="text-gray-600 mt-2">Buat akun baru di Sistem Absensi PKL</p>
+            <img src="{{ asset('Lambang_Polda_Jabar.png') }}" alt="Logo Polda Jabar" class="w-24 h-24 mx-auto mb-4 shadow-lg object-contain hover:scale-110 transition-transform">
+            <h1 class="text-3xl font-bold text-gray-800">POLRES GARUT</h1>
+            <p class="text-gray-600 mt-2">Daftar Akun Baru</p>
         </div>
 
         <!-- Alert Messages -->

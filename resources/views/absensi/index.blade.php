@@ -6,8 +6,10 @@
 <div class="space-y-6">
     <!-- Header untuk Admin -->
     @if(auth()->user()->role === 'admin')
-    <div class="bg-gradient-to-r from-red-600 to-red-700 rounded-2xl shadow-xl p-8 text-white">
-        <div class="flex items-center space-x-4">
+    <div class="bg-gradient-to-r from-red-600 to-red-700 rounded-2xl shadow-xl p-8 text-white relative overflow-hidden"
+         style="background-image: url('{{ asset('Lambang_Polda_Jabar.png') }}'); background-size: cover; background-position: center; background-blend-mode: overlay;">
+        <div class="absolute inset-0 bg-black bg-opacity-40 rounded-2xl"></div>
+        <div class="relative z-10 flex items-center space-x-4">
             <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
                 <i class="fas fa-user-tie text-3xl"></i>
             </div>
@@ -22,8 +24,10 @@
 
     <!-- Header untuk Siswa (User) -->
     @if(auth()->user()->role === 'user' && auth()->user()->siswaPkl)
-    <div class="bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl shadow-xl p-8 text-white">
-        <div class="flex items-center space-x-4">
+    <div class="bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl shadow-xl p-8 text-white relative overflow-hidden"
+         style="background-image: url('{{ asset('Lambang_Polda_Jabar.png') }}'); background-size: cover; background-position: center; background-blend-mode: overlay;">
+        <div class="absolute inset-0 bg-black bg-opacity-40 rounded-2xl"></div>
+        <div class="relative z-10 flex items-center space-x-4">
             <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
                 <i class="fas fa-user-graduate text-3xl"></i>
             </div>
