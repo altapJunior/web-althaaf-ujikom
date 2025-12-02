@@ -881,6 +881,8 @@ Untuk detail lengkap, lihat [Dokumentasi Diagram](docs/DIAGRAMS.md)
 | File | Deskripsi |
 |------|-----------|
 | [ERD.md](ERD.md) | Entity Relationship Diagram dengan schema database lengkap |
+| [docs/ERD_VISUAL.md](docs/ERD_VISUAL.md) | ⭐ ERD DIAGRAM VISUAL dengan ASCII art dan relasi detail |
+| [docs/ERD_DETAILED.md](docs/ERD_DETAILED.md) | ERD LENGKAP dengan tabel detail, relasi, SQL, dan query examples |
 | [UML.md](UML.md) | UML Class Diagram dan System Architecture |
 | [docs/DIAGRAMS.md](docs/DIAGRAMS.md) | Dokumentasi semua diagram sistem |
 | [docs/PUSH_TO_GITHUB.md](docs/PUSH_TO_GITHUB.md) | Panduan push file ke GitHub |
@@ -888,13 +890,23 @@ Untuk detail lengkap, lihat [Dokumentasi Diagram](docs/DIAGRAMS.md)
 
 ### Detail Dokumentasi
 
-#### 1. **ERD (Entity Relationship Diagram)**
-Schema database dengan 3 tabel utama:
-- Users, Siswa_PKL, Absensi
-- Foreign key relationships dengan CASCADE
-- Enum values: role (admin/user), status (hadir/izin/sakit/alpha)
+#### 1. **ERD (Entity Relationship Diagram) - ⭐ VISUAL DIAGRAM**
 
-👉 Buka [ERD.md](ERD.md) untuk visualisasi lengkap
+👉 **Buka [docs/ERD_VISUAL.md](docs/ERD_VISUAL.md)** untuk DIAGRAM dengan:
+- ✅ Visual ASCII diagram semua relasi
+- ✅ One-to-One & One-to-Many relationships
+- ✅ Cardinality diagram lengkap
+- ✅ Enum values (role, status)
+- ✅ Data model setiap table
+- ✅ Primary & Foreign Key mapping
+- ✅ Sample data actual
+- ✅ Relationship flow diagram
+- ✅ Business rules & validasi
+- ✅ SQL DDL statements siap pakai
+
+**Untuk referensi lengkap juga buka:**
+- [docs/ERD_DETAILED.md](docs/ERD_DETAILED.md) - Detail schema dengan constraint
+- [ERD.md](ERD.md) - Ringkasan singkat
 
 #### 2. **UML (Class Diagram & Architecture)**
 Dokumentasi system architecture:
