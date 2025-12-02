@@ -308,21 +308,68 @@ LaravelAlthaafUjikom/
 
 ## 🏗️ Dokumentasi Teknis
 
-### Entity Relationship Diagram
-Lihat file [ERD.md](ERD.md) untuk dokumentasi lengkap schema database, termasuk:
-- Definisi tabel dan kolom
-- Foreign key relationships
-- Enum values
-- Constraint dan indexes
+### Diagram & Arsitektur
 
-### UML & Architecture
-Lihat file [UML.md](UML.md) untuk:
-- Class diagram dan relationships
-- Controller architecture
-- Middleware flow
-- Database transaction flow
-- Security & validation rules
-- Sequence diagrams
+#### Entity Relationship Diagram (ERD)
+Diagram menunjukkan relasi antar tabel dalam database:
+- **Users Table**: Menyimpan data login admin dan siswa
+- **Siswa_PKL Table**: Profil detail siswa yang terhubung ke Users
+- **Absensi Table**: Record absensi harian yang terhubung ke Siswa_PKL
+
+Untuk visualisasi lengkap, lihat [Dokumentasi Diagram](docs/DIAGRAMS.md)
+
+#### Use Case Diagram
+Menggambarkan interaksi antara:
+- **Siswa PKL**: Dapat absen masuk/pulang, lapor izin/sakit, lihat riwayat
+- **Admin**: Dapat mengelola siswa, input absensi, generate laporan
+
+Untuk detail lengkap, lihat [Dokumentasi Diagram](docs/DIAGRAMS.md)
+
+---
+
+### File Dokumentasi Utama
+
+| File | Deskripsi |
+|------|-----------|
+| [ERD.md](ERD.md) | Entity Relationship Diagram dengan schema database lengkap |
+| [UML.md](UML.md) | UML Class Diagram dan System Architecture |
+| [docs/DIAGRAMS.md](docs/DIAGRAMS.md) | Dokumentasi semua diagram sistem |
+| [docs/PUSH_TO_GITHUB.md](docs/PUSH_TO_GITHUB.md) | Panduan push file ke GitHub |
+| [README.md](README.md) | File ini - Dokumentasi project |
+
+### Detail Dokumentasi
+
+#### 1. **ERD (Entity Relationship Diagram)**
+Schema database dengan 3 tabel utama:
+- Users, Siswa_PKL, Absensi
+- Foreign key relationships dengan CASCADE
+- Enum values: role (admin/user), status (hadir/izin/sakit/alpha)
+
+👉 Buka [ERD.md](ERD.md) untuk visualisasi lengkap
+
+#### 2. **UML (Class Diagram & Architecture)**
+Dokumentasi system architecture:
+- Class diagrams untuk User, SiswaPkl, Absensi models
+- Controller architecture dan Middleware flow
+- Database transaction flows
+- Sequence diagrams untuk Login & Register
+
+👉 Buka [UML.md](UML.md) untuk detail lengkap
+
+#### 3. **Diagram Use Case**
+Interaksi user dengan system:
+- Siswa PKL: Absen, Lapor Izin/Sakit, Lihat Riwayat
+- Admin: Kelola Siswa, Input Absensi, Generate Laporan
+
+👉 Buka [docs/DIAGRAMS.md](docs/DIAGRAMS.md) untuk visualisasi
+
+#### 4. **Panduan GitHub**
+Instruksi lengkap untuk:
+- Push file ke repository
+- Menangani error permission
+- Setup SSH atau Personal Access Token
+
+👉 Buka [docs/PUSH_TO_GITHUB.md](docs/PUSH_TO_GITHUB.md) untuk panduan
 
 ---
 
